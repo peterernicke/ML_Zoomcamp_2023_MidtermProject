@@ -1,13 +1,7 @@
 # ML Zoomcamp 2023 Midterm Project
-
-What we need to do for this project:
-- Think of a problem that's interesting for you and find a dataset for that
-- Describe this problem and explain how a model could be used
-- Prepare the data and doing EDA, analyze important features
-- Train multiple models, tune their performance and select the best model
-- Export the notebook into a script
-- Put your model into a web service and deploy it locally with Docker
-- Bonus points for deploying the service to the cloud
+|![](Images/robina-weermeijer-z8_-Fmfz06c-unsplash.jpg)|
+|:--:|
+|*[Image from https://unsplash.com](https://unsplash.com/de/fotos/%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%A7%88%EC%9D%8C-%EA%B7%B8%EB%A6%BC-z8_-Fmfz06c)*|
 
 ## Problem Description
 The used dataset is from [Kaggle](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset/data).
@@ -17,6 +11,7 @@ The dataset has 14 columns and we can use the "output" column as our target vari
 
 The Dataset contains multiple columns
 | Column name | Description |
+| ----------- | ----------- |
 | age | Age of the patient  |
 | sex | Sex of the patient  |
 |     |   Value 0: female   |
@@ -63,7 +58,7 @@ There is a notebook (/Notebook/notebook.ipynb) that contains:
 The model is provided as containerized web service that listens on port 9797.
 
 ## Reproducibility
-It's convvenient to track my progress using the Makefile, which provides all the necessary commands:
+It's convenient to track my progress using the Makefile, which provides all the necessary commands:
 1. To set up the environment, use "make environment" or follow the listed commands.
 2. Inspect the Jupyter notebook in the Notebook folder.
 3. Start model training of the final model with "make train", saving it in the Model folder.

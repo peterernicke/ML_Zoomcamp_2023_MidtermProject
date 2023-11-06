@@ -17,12 +17,5 @@ def predict():
     score = int(y_pred[0] >= 0.50)
     return jsonify(score)
 
-
-#def predict_single_patient(patient, dv, model):
-#    X = dv.transform([patient])
-#    y_pred = model.predict_proba(X)[:,1]
-#    score = int(y_pred[0] >= 0.50)
-#    return score
-
 if __name__=="__main__":
     app.run(debug=True, host='0.0.0.0', port=9797)

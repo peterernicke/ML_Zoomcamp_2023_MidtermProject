@@ -19,4 +19,6 @@ patient = {
 }
 
 response = requests.post(url, json=patient).json()
+print("Prediction for patient (0 = less chance of heart attack; 1 = more chance of heart attack):")
+print(patient,"\n")
 print(response)
